@@ -1,0 +1,101 @@
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.box-container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 30px;
+    padding-top: 100px;
+}
+.btn{
+    background-color: rgba(0, 179, 202, 0.4);
+    width: 50%;
+    margin: auto;
+    transition: 0.5s;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 179, 202);
+}
+
+
+
+.box{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1.5rem;
+    color: white;
+    border-radius: 20px;
+    margin: 6px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+#city{
+    background-color: rgba(0, 180, 150, 0.5);
+}
+#city:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 180, 150);
+}
+
+
+#temp{
+    background-color:  rgba(0, 180, 210, 0.5);
+}
+#temp:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 180, 210);
+}
+
+
+#humidity{
+    background-color:  rgba(0, 180, 170, 0.5);
+}
+#humidity:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 180, 170);
+}
+
+
+#wind{
+    background-color:  rgba(0, 180, 190, 0.5);
+}
+#wind:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 180, 190);
+}
+
